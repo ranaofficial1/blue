@@ -4,6 +4,7 @@ import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
 // import { Routes, Route, useLocation } from "react-router-dom";
 // import { useEffect } from 'react';
 import HomePage from './pages/HomePage.jsx';
+import Header from './component/Header.jsx';
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
 
   return (
     <HomePage/>
+    // <Header />
   );
 }
 
