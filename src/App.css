@@ -1,0 +1,250 @@
+:root {
+  --blue: #2d7ed0;
+  --darkblue: #0588E7;
+  --white: #ffffff;
+  --grey: #161616;
+  --fontSize-1: 20px;
+}
+
+.fontSize-2{
+  font-size: 40px !important;
+} 
+.fontSize-3{
+  font-size: 30px !important;
+} 
+.fontSize-4{
+  font-size: 28px !important;
+} 
+.h-1 {
+  height: 230px !important;
+}
+.btn-primary{
+  background-color: var(--darkblue) !important;
+}
+.bg-blue {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)) !important;
+}
+.cardBg{
+  background-image: url('./assets/card-bg.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 905px;
+}
+.card-heading{
+  padding: 0px 31px;
+  line-height: 35px;
+  color: white;
+}
+.card-heading-bg{
+  background: linear-gradient(rgba(109, 154, 186, 0.2), rgba(23, 51, 72, 0.7)) !important;
+  margin-top: -5.4rem;
+}
+.pt-133{
+  padding-top: 133px;
+}
+p {
+  color: var(--blue);
+}
+
+a {
+  text-decoration: none;
+}
+
+.wave-container {
+  max-width: 100%;
+  background-image: url("./assets/Wave.png");
+}
+
+.banner-heading {
+  width: 100%;
+  display: flex;
+  padding: 2% 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.border-top {
+  border-top: 1px solid black;
+}
+.banner-heading span {
+  font-size: 4vw;
+  font-weight: bold;
+}
+
+.detail-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+}
+
+.detail-about span:nth-child(1) {
+  padding: 3% 8%;
+  font-size: 1.7vw;
+  text-align: justify;
+}
+
+.detail-about span:nth-child(2) {
+  padding: 1% 8%;
+  font-size: 1.5vw;
+  text-align: justify;
+  opacity: 0.7;
+}
+
+.blue-background {
+  background-color: var(--blue);
+}
+
+.product-carousel {
+  position: relative;
+  overflow: hidden;
+  padding: 5px;
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-container {
+  padding: 0 0px;
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.mini-project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  padding: 10px;
+  margin: 10px 10px;
+  border-radius: 10px;
+  color: aliceblue;
+  position: relative;
+
+  /* width: 280px; */
+}
+
+.mini-project-container img {
+  width: 18vw;
+  height: 18vw;
+  border-radius: 10px;
+  object-fit: fill;
+}
+
+.arrowRight {
+  transform: rotate(180deg);
+  width: 60px;
+  cursor: pointer;
+}
+
+.arrowLeft {
+  transform: rotate(0deg);
+  width: 60px;
+  cursor: pointer;
+}
+
+.arrowRightbtn {
+  display: none;
+  transform: rotate(180deg);
+  width: 60px;
+  cursor: pointer;
+}
+
+.arrowLeftbtn {
+  display: none;
+  transform: rotate(0deg);
+  width: 60px;
+  cursor: pointer;
+}
+
+.poster1-main1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.poster1-main1 img {
+  width: 100%;
+}
+
+.carousel-container {
+  margin: 1vw 0;
+}
+
+
+
+
+@media (max-width: 950px) {
+  .details-about span:nth-child(1) {
+    font-size: 1.3rem;
+  }
+
+  .details-about span:nth-child(2) {
+    font-size: 1.3vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-heading span {
+    font-size: 6vw;
+  }
+  .product-carousel {
+    width: 95%;
+    padding: 0;
+  }
+
+  .arrowRight {
+    display: none;
+    transform: rotate(180deg);
+    width: 30px;
+  }
+
+  .arrowLeft {
+    display: none;
+    transform: rotate(0deg);
+    width: 30px;
+  }
+
+  .arrowRightbtn {
+    display: inline;
+    transform: rotate(180deg);
+    width: 30px;
+  }
+
+  .arrowLeftbtn {
+    display: block;
+    transform: rotate(0deg);
+    width: 30px;
+  }
+  .detail-about span:nth-child(1) {
+    font-size: 4vw;
+    padding: 5% 6%;
+  }
+
+  .detail-about span:nth-child(2) {
+    font-size: 2.5vw;
+    padding: 5% 6%;
+  }
+  .mini-project-container img {
+    width: 60vw;
+    height: 60vw;
+  }
+}
+
+@media (max-width: 558px) {
+  .detail-about span:nth-child(1) {
+    font-size: 3.8vw;
+  }
+
+  .detail-about span:nth-child(2) {
+    font-size: 3.5vw;
+  }
+}

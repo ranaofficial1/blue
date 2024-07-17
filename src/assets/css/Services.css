@@ -1,0 +1,96 @@
+.service-poster-main {
+  width: 100%;
+  background-image: url("../../assets/servicePoster.jpg");
+  background-size: 100% 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.service-poster-cont {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.service-poster {
+  width: 33.3%;
+  margin: 0 0 5% 0;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.service-poster-img-cont {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.service-poster-img-cont img {
+  width: 100%;
+  object-fit: cover;
+  height: 30vw;
+}
+
+.service-poster span {
+  font-size: 1.8vw;
+  padding: 4%;
+  color: black;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.service-poster p {
+  text-align: justify;
+  font-size: 1.3vw;
+  padding: 4%;
+  color: black;
+  height: 15vw;
+}
+
+@media (max-width: 950px) {
+  .service-poster-main {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-poster-main {
+    height: 60vh;
+  }
+
+  .service-poster-cont {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-poster {
+    width: 90%;
+  }
+
+  .service-poster-img-cont img {
+    height: 70vw;
+  }
+
+  .service-poster span {
+    font-size: 4vw;
+  }
+  .service-poster p {
+    font-size: 20px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 568px) {
+  .service-poster p {
+    font-size: 15px;
+    height: 190px;
+  }
+}

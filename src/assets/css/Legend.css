@@ -1,0 +1,186 @@
+.legend-heading {
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.legend-heading span {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.legend-poster {
+  width: 100%;
+  background-image: url("../../assets/home3.png");
+  background-size: 100% 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.legend-details {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 3%;
+  background-color: var(--blue);
+}
+
+.legend-details-img {
+  width: 40%;
+  border-radius: 2rem;
+}
+
+.legend-details-img img {
+  width: 100%;
+  border-radius: 2rem;
+}
+
+.legend-details-text {
+  width: 50%;
+  padding: 3%;
+  text-align: justify;
+}
+
+.legend-details-text p {
+  color: white;
+  font-size: 1.2vw;
+}
+
+.legend-poster-cont {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.legend-poster-box {
+  margin: 2% 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.legend-poster-details {
+  width: 70%;
+  display: flex;
+  padding: 3%5%3%3%;
+
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.legend-poster-details-title {
+  display: inline;
+  margin: 5px 0px;
+  padding: 5px 20px;
+  border: 1px solid black;
+  border-radius: 1rem;
+  font-size: 2vw;
+  box-shadow: 1px 1px 0px 0.5px black;
+  font-weight: 700;
+}
+.legend-poster-details p {
+  color: black;
+  padding: 15px 2px;
+  text-align: justify;
+  font-size: 1.5vw;
+  font-weight: 450;
+}
+.legend-poster-img {
+  width: 35vw;
+}
+
+.legend-poster-img img {
+  width: 100%;
+  height: 18vw;
+  border-radius: 2rem;
+}
+
+@media (max-width: 950px) {
+  .legend-heading span {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .legend-poster {
+    background-image: url("../../assets/home3.png");
+    background-size: 100% 100%;
+    height: 60vh;
+  }
+
+  .legend-details-img {
+    width: 30%;
+  }
+}
+
+@media (max-width: 768px) {
+  .legend-poster-img img {
+    height: 40vw;
+  }
+  .legend-poster-details div {
+    font-size: 2.5vw;
+  }
+  .legend-heading span {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .legend-poster {
+    background-image: url("../../assets/home3.png");
+    background-size: 100% 100%;
+    height: 50vh;
+  }
+  .legend-details {
+    flex-direction: column;
+  }
+
+  .legend-details-img {
+    width: 90%;
+  }
+
+  .legend-details-text {
+    width: 90%;
+  }
+
+  .legend-details-text p {
+    font-size: 2.5vh;
+  }
+
+  .legend-poster-box {
+    flex-direction: column;
+  }
+
+  .legend-poster-details {
+    width: 90%;
+  }
+
+  .legend-poster-img {
+    width: 80%;
+  }
+  .legend-details-img img {
+    height: 270px;
+  }
+
+  .legend-poster-details p {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 608px) {
+  .legend-details-img img {
+    height: 230px;
+  }
+}
+
+@media (max-width: 538px) {
+  .legend-details-img img {
+    height: 200px;
+  }
+}

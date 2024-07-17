@@ -1,0 +1,356 @@
+.People-poster-main {
+  width: 100%;
+  background-image: url("../../assets/peopleposter.jpg");
+  background-size: 100% 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.People-poster2-main {
+  width: 90%;
+  margin: 2% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.People-poster2-main img {
+  width: 100%;
+}
+
+.people-content {
+  margin: 10px 8%;
+}
+.people-content p {
+  color: black;
+  margin: 5px;
+  font-weight: bolder;
+  font-size: 3.2rem;
+}
+
+.people-flex-text {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.people-flex-text img {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+}
+
+.people-flex-text span {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.the-cheif {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3% 0;
+  background-color: var(--blue);
+}
+
+.the-cheif-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10%;
+}
+
+.the-cheif-text span {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: left;
+  color: var(--white);
+}
+
+.the-cheif-img {
+  width: 50%;
+}
+
+.the-cheif-img img {
+  width: 100%;
+}
+
+.blue-background {
+  background-color: var(--blue);
+}
+
+.people-details-cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.people-detail-design {
+  width: 50%;
+  padding: 10% 0% 10% 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.people-detail-text {
+  width: 50%;
+}
+.people-phase-1 {
+  margin-top: 20px;
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.people-phase-1 span {
+  display: inline;
+
+  font-weight: 500;
+  margin: 10px 10px;
+  color: black;
+  border: 1.5px solid black;
+  box-shadow: 1px 1px 0px 0.5px black;
+  border-radius: 10px;
+  padding: 1px 10px;
+}
+.people-phase-1 img {
+  margin: 5px 10px;
+  width: 43px;
+  transform: rotate(270deg);
+}
+
+.people-phase-2 {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: flex-start;
+}
+.people-phase-2-img {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.people-phase-2-img img {
+  transform: rotate(270deg);
+}
+
+.people-phase-2-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.people-phase-2-text span {
+  display: inline;
+  font-weight: 500;
+  margin: 10px 10px;
+  color: black;
+  border: 1.5px solid black;
+  box-shadow: 1px 1px 0px 0.5px black;
+  border-radius: 10px;
+  padding: 1px 10px;
+}
+.people-detail-text {
+  padding: 5% 5% 5% 5%;
+  text-align: justify;
+  font-size: 1.8vw;
+}
+
+.major-project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  padding: 10px;
+  margin: 10px 10px;
+  border-radius: 10px;
+  color: aliceblue;
+  position: relative;
+  width: 25vw;
+}
+
+.people-corosel-cont {
+  width: 100%;
+  background-color: var(--blue);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.People-project-img {
+  width: 18vw;
+}
+
+.People-project-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 1.5rem;
+}
+
+.People-project-name {
+  color: var(--white);
+  font-size: 1.5vw;
+  font-weight: 500;
+  margin: 5px 0;
+}
+.People-project-post {
+  color: var(--white);
+  margin: 0px 0 5px 0;
+  font-size: 1vw;
+  font-style: italic;
+}
+.People-project-text {
+  color: var(--white);
+  margin: 5px 0;
+  font-size: 1.2vw;
+  font-weight: 300;
+  text-align: justify;
+}
+
+@media (max-width: 950px) {
+  .People-poster-main {
+    height: 70vh;
+  }
+
+  .people-content p {
+    font-size: 2.3rem;
+  }
+
+  .the-cheif-text span {
+    font-size: 3rem;
+  }
+
+  .people-detail-text {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .People-poster-main {
+    height: 50vh;
+  }
+
+  .people-content p {
+    font-size: 2rem;
+  }
+  .people-flex-text img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+  }
+
+  .people-flex-text span {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .the-cheif-text span {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+    color: var(--white);
+  }
+
+  .the-cheif-img {
+    width: 50%;
+  }
+
+  .people-details-cont {
+    flex-direction: column;
+  }
+  .people-detail-design {
+    width: 90%;
+    padding: 20px;
+  }
+  .people-detail-text {
+    width: 90%;
+    padding: 5px;
+  }
+  .major-project-container {
+    width: 60vw;
+  }
+  .People-project-img {
+    width: 40vw;
+  }
+  .People-project-img img {
+    width: 40vw;
+  }
+  .People-project-name {
+    font-size: 3vw;
+  }
+  .People-project-post {
+    font-size: 2vw;
+  }
+  .People-project-text {
+    font-size: 2.8vw;
+  }
+  .people-detail-text {
+    font-size: 4vw;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 668px) {
+  .People-poster-main {
+    height: 40vh;
+  }
+
+  .the-cheif-text span {
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: left;
+    color: var(--white);
+  }
+
+  .people-content p {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 590px) {
+  .people-content p {
+    color: black;
+    margin: 5px;
+    font-weight: bolder;
+    font-size: 1.6rem;
+  }
+
+  .people-flex-text {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+  }
+
+  .people-flex-text img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+  }
+
+  .people-flex-text span {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .the-cheif-text span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: left;
+    color: var(--white);
+  }
+  .people-content p {
+    font-size: 1.2rem;
+  }
+}

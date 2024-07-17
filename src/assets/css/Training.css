@@ -1,0 +1,164 @@
+.training-details-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.training-details-cont-left {
+  width: 75%;
+  padding-right: 3%;
+  color: black;
+}
+
+.training-details-cont-left p {
+  color: black;
+  font-size: 1.5vw;
+  opacity: 0.7;
+  font-weight: 400;
+  text-align: justify;
+}
+.training-details-cont-right {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.training-details-cont-right span {
+  font-size: 1.7vw;
+  font-weight: 700;
+}
+.training-details-cont-right p {
+  text-align: center;
+  margin: 5px 0px;
+  width: 20vw;
+  font-size: 1.3vw;
+  color: black;
+  border: 1.5px solid black;
+  box-shadow: 1px 1px 0px 0.5px black;
+  border-radius: 10px;
+  padding: 5px 30px;
+}
+
+.training-details-cont-right img {
+  width: 1.6vw;
+  
+  text-align: start;
+}
+
+.training-enquiry {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3% 20%;
+}
+
+.training-enquiry-div span {
+  font-size: 3vw;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.training-enquiry-div p {
+  color: black;
+  margin: 10px 0;
+  font-size: 1.7vw;
+}
+
+.training-enquiry-enq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.training-enquiry-enq span {
+  font-size: 1.3vw;
+  margin: 5px auto;
+  color: var(--blue);
+  font-weight: 600;
+  border: 1.5px solid black;
+  box-shadow: 1px 1px 0px 0.5px black;
+  border-radius: 20px;
+  padding: 5px 40px;
+}
+@media (max-width: 950px) {
+  .training-details-cont-left {
+    width: 65%;
+  }
+  .training-details-cont-left p {
+    font-size: 1.6vw;
+  }
+  .training-details-cont-right {
+    width: 30%;
+  }
+  .training-details-cont-right p {
+    padding: 5px 3px;
+  }
+}
+
+@media (max-width: 768px) {
+  .training-details-cont-left p {
+    font-size: 4vw;
+  }
+  .training-details-cont-right {
+    font-size: 4vw;
+  }
+
+  .training-details-cont-right p {
+    text-align: center;
+    width: 1.3vw;
+    font-size: 4vw;
+    color: black;
+    border: 1.5px solid black;
+    box-shadow: 1px 1px 0px 0.5px black;
+    border-radius: 10px;
+  }
+
+  .training-details-cont-right img {
+    width: 3vw;
+  }
+  .training-details-cont-right span {
+    font-size: 5vw;
+    font-weight: 700;
+  }
+  .training-enquiry-enq span {
+    font-size: 2.3vw;
+  }
+  .training-enquiry-div span {
+    font-size: 5vw;
+  }
+  .training-enquiry-div p {
+    font-size: 3vw;
+  }
+  .training-details-cont {
+    flex-direction: column;
+  }
+
+  .training-details-cont-left {
+    width: 85%;
+  }
+
+  .training-details-cont-right {
+    width: 55%;
+    margin-top: 10%;
+  }
+
+  .training-details-cont-right p {
+    text-align: center;
+    width: 60vw;
+  }
+
+  .training-enquiry {
+    padding: 3% 10%;
+    flex-direction: column;
+  }
+
+  .training-details-cont-right {
+    width: 80%;
+  }
+}
