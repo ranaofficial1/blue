@@ -40,253 +40,87 @@
 .mt-7 {
   margin-top: 6rem;
 }
-.navbar-menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
+.container {
+  padding-top: 20px;
 }
 
-.navbar-menu-small {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.navbar {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo2 img {
+  height: 40px;
+}
+
+.navItems {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navItems a {
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar-toggler {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 .nav-item {
   position: relative;
 }
 
-.nav-link {
-  display: block;
-  padding: 5px 10px;
-  text-decoration: none;
-  color: black;
-  font-size: 3vh;
-  font-weight: 400;
-}
-
-
-
 .dropdown-menu {
-  position: absolute;
-  top: 100%;
-  right: -10%;
-  width: 150px;
-  list-style: none;
-  background-color: var(--grey);
-  z-index: 1;
-  text-align: center;
-}
-
-.dropdown-menu-button {
   display: none;
   position: absolute;
-  height: 90vh;
   top: 100%;
-  right: -10%;
-  width: 150px;
+  left: 0;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
   list-style: none;
-  background-color: var(--white);
-  z-index: 1;
-  text-align: center;
 }
 
-.drop-link a {
-  color: var(--white);
-}
-
-.more-option {
-  cursor: pointer;
-  display: none;
-}
-
-.dropdown-menu .nav-item {
-  position: relative;
-}
-
-.dropdown-item {
-  padding: 10px 15px;
-  margin: auto 0;
-  background-color: var(--white);
-}
-
-.dropdown-item-button {
-  padding: 13px 1px;
-  margin: auto 0;
-  background-color: var(--white);
-}
-
-.navbar-toggle {
-  display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.navbar-icon {
-  color: black;
-}
-
-.navbar-toggle .navbar-icon {
+.nav-item:hover .dropdown-menu {
   display: block;
-  width: 25px;
-  height: 2px;
-  color: black;
-  background-color: black;
-  margin: 5px 0;
-}
-
-.heading-div {
-  width: 100%;
-  overflow: hidden;
-  margin: 10px auto;
-  color: #fff;
-  text-align: center;
-  letter-spacing: 3px;
-  margin-top: 20px;
-}
-
-@media (max-width: 1028px) {
-  .more-option {
-    display: block;
-  }
-  .active {
-    display: none;
-  }
-  .Contact,
-  .Training,
-  .CLientsOpt,
-  .ProjectsOpt,
-  .ProjectsOpt,
-  .ServicesOpt,
-  .AboutOpt,
-  .PeopleOpt,
-  .HomeOpt,
-  .LegendOpt {
-    display: none;
-  }
-  .ContactOpt,
-  .TrainingOpt {
-    display: block;
-  }
-}
-
-@media (max-width: 950px) {
-  .Contact,
-  .Training,
-  .CLients,
-  .People,
-  .ProjectsOpt,
-  .ServicesOpt,
-  .AboutOpt,
-  .HomeOpt,
-  .LegendOpt {
-    display: none;
-  }
-  .ContactOpt,
-  .TrainingOpt,
-  .CLientsOpt,
-  .PeopleOpt {
-    display: block;
-  }
-}
-
-@media (max-width: 800px) {
-  .Contact,
-  .Training,
-  .CLients,
-  .People,
-  .Projects,
-  .Services,
-  .AboutOpt,
-  .HomeOpt,
-  .LegendOpt {
-    display: none;
-  }
-  .ContactOpt,
-  .TrainingOpt,
-  .CLientsOpt,
-  .PeopleOpt,
-  .ProjectsOpt,
-  .ServicesOpt {
-    display: block;
-  }
-}
-
-@media (max-width: 788px) {
-  .Contact,
-  .Training,
-  .CLients,
-  .Projects,
-  .Services,
-  .About,
-  .Legend {
-    display: none;
-  }
-  .ContactOpt,
-  .TrainingOpt,
-  .CLientsOpt,
-  .ProjectsOpt,
-  .ServicesOpt,
-  .AboutOpt,
-  .LegendOpt {
-    display: block;
-  }
 }
 
 @media (max-width: 768px) {
-  .navbar {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 2;
-  }
-  .dropdown-menu-button {
+  .navItems {
     display: none;
+    flex-direction: column;
+    gap: 10px;
     position: absolute;
-    top: 100%;
-    right: -600%;
-    width: 330px;
-    list-style: none;
-    background-color: var(--white);
-    z-index: 1;
-    text-align: center;
+    top: 60px;
+    right: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
-  .active {
+
+  .navItems.open {
+    display: flex;
+  }
+
+  .navbar-toggler {
     display: block;
   }
 
-  .Contact,
-  .Training,
-  .CLients,
-  .Projects,
-  .Services,
-  .About,
-  .Legend,
-  .Home,
-  .more-option,
-  .People {
-    display: none;
-  }
-  .ContactOpt,
-  .TrainingOpt,
-  .CLientsOpt,
-  .ProjectsOpt,
-  .PeopleOpt,
-  .HomeOpt,
-  .ServicesOpt,
-  .AboutOpt,
-  .LegendOpt {
-    display: block;
-  }
-
-  .navbar-toggle {
-    display: block;
-  }
-
-  .nav-item {
-    position: relative;
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    padding: 0;
   }
 }
